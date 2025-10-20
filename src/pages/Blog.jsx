@@ -71,7 +71,7 @@ const Blog = () => {
       gpa: '3.5/4.0',
       details: [
         'Chuyên ngành: Công Nghệ Phần Mềm',
-        'Đồ án tốt nghiệp: Hệ thống quản lý bán hàng trực tuyến',
+        'Đồ án chuyên ngành: Hệ thống quản lý xem phim trực tuyến',
         'Các môn học nổi bật: Cấu trúc dữ liệu & giải thuật, Lập trình hướng đối tượng, Cơ sở dữ liệu, Phát triển ứng dụng web.'
       ],
     },
