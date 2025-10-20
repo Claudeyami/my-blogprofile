@@ -381,6 +381,99 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Blog Section: Java vs JavaScript */}
+      <section className="blog-section" style={{
+        padding: '40px 20px',
+        background: 'linear-gradient(180deg, #fdfdfd 0%, #f1f1f1 100%)',
+        borderRadius: '16px',
+        boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+        maxWidth: '900px',
+        margin: '40px auto',
+        fontFamily: 'Segoe UI, sans-serif'
+      }}>
+        <h2 style={{ textAlign: 'center', color: '#2c3e50', fontSize: '28px', marginBottom: '20px' }}>
+          🧠 Kiến thức Lập trình: Java vs JavaScript
+        </h2>
+        
+        <p style={{ fontSize: '17px', lineHeight: '1.8', color: '#333' }}>
+          Nếu bạn từng nghe qua hai cái tên <b>Java</b> và <b>JavaScript</b> rồi thắc mắc “Ủa, chắc là một loại chứ gì?”, 
+          thì… xin chia buồn 😅 — bạn vừa rơi vào cái bẫy marketing lớn nhất trong lịch sử lập trình!
+        </p>
+
+        <p style={{ fontSize: '17px', lineHeight: '1.8', color: '#333' }}>
+          Hai ngôn ngữ này thực ra <b>khác nhau hoàn toàn</b> — từ mục tiêu thiết kế, cách hoạt động đến nơi chúng được sử dụng.
+        </p>
+
+        <h3 style={{ color: '#e67e22', marginTop: '30px' }}>☕ Java – Ngôn ngữ “doanh nghiệp” và hệ thống lớn</h3>
+        <p style={{ lineHeight: '1.8', fontSize: '16px' }}>
+          Java ra đời năm 1995, cùng thời điểm với sự bùng nổ của Internet. Nó là một ngôn ngữ 
+          <b>hướng đối tượng mạnh mẽ</b>, chạy trên nền tảng <b>JVM (Java Virtual Machine)</b>.
+          Ưu điểm là “viết một lần, chạy mọi nơi” – chạy được trên Windows, Mac, Linux, thậm chí Android.
+        </p>
+
+        <ul style={{ marginLeft: '20px' }}>
+          <li>✅ Dùng trong ứng dụng Android</li>
+          <li>🏢 Phù hợp cho các hệ thống lớn, ngân hàng, doanh nghiệp</li>
+          <li>💪 Cú pháp nghiêm ngặt, hiệu suất cao, dễ kiểm soát</li>
+        </ul>
+
+        <h3 style={{ color: '#3498db', marginTop: '30px' }}>💡 JavaScript – Linh hồn của thế giới Web</h3>
+        <p style={{ lineHeight: '1.8', fontSize: '16px' }}>
+          JavaScript lại được tạo ra cũng năm 1995, nhưng dành riêng cho <b>trình duyệt</b> – 
+          giúp website trở nên sinh động hơn. Khi bạn bấm nút, cuộn trang, xem hiệu ứng trượt mượt mà —
+          đó là công của JavaScript!
+        </p>
+
+        <ul style={{ marginLeft: '20px' }}>
+          <li>🌐 Dùng cho Frontend (React, Vue, Angular)</li>
+          <li>⚙️ Dùng được cả Backend (Node.js)</li>
+          <li>⚡ Rất linh hoạt, học nhanh, code sáng tạo</li>
+        </ul>
+
+        <h3 style={{ color: '#16a085', marginTop: '30px' }}>⚔️ Java vs JavaScript – Giống nhau mỗi cái tên</h3>
+        <p style={{ lineHeight: '1.8', fontSize: '16px' }}>
+          Cả hai đều mạnh, nhưng hướng đi khác nhau:
+        </p>
+        <table style={{
+          width: '100%',
+          borderCollapse: 'collapse',
+          textAlign: 'left',
+          margin: '20px 0'
+        }}>
+          <tbody>
+            <tr style={{ background: '#ecf0f1' }}>
+              <th style={{ padding: '10px' }}>Tiêu chí</th>
+              <th style={{ padding: '10px' }}>Java</th>
+              <th style={{ padding: '10px' }}>JavaScript</th>
+            </tr>
+            <tr>
+              <td style={{ padding: '10px' }}>Môi trường chạy</td>
+              <td style={{ padding: '10px' }}>JVM, Android, server</td>
+              <td style={{ padding: '10px' }}>Trình duyệt, Node.js</td>
+            </tr>
+            <tr style={{ background: '#ecf0f1' }}>
+              <td style={{ padding: '10px' }}>Mục tiêu chính</td>
+              <td style={{ padding: '10px' }}>Backend, ứng dụng lớn</td>
+              <td style={{ padding: '10px' }}>Frontend, web động</td>
+            </tr>
+            <tr>
+              <td style={{ padding: '10px' }}>Độ linh hoạt</td>
+              <td style={{ padding: '10px' }}>Cứng nhắc, nghiêm ngặt</td>
+              <td style={{ padding: '10px' }}>Tự do, sáng tạo</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p style={{ textAlign: 'center', marginTop: '20px', fontStyle: 'italic', color: '#555' }}>
+          👉 Nói vui: Java là “cỗ máy cơ khí chính xác”, còn JavaScript là “nghệ sĩ đường phố” của giới lập trình.
+        </p>
+
+        <p style={{ textAlign: 'center', marginTop: '20px', color: '#777' }}>
+          <b>Kết luận:</b> Học cả hai, bạn sẽ hiểu cả thế giới backend lẫn frontend —  
+          trở thành một lập trình viên <b>Fullstack</b> thực thụ 💪
+        </p>
+      </section>
+
       {/* CTA Section */}
       <section style={{
         padding: '80px 0',

@@ -287,7 +287,7 @@ const Projects = () => {
               Bắt đầu dự án
             </Link>
             <a 
-              href="mailto:hochau@gmail.com"
+              href="mailto:hochauthanh22062004@gmail.com"
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
