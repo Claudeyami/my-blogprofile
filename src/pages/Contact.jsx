@@ -26,7 +26,7 @@ const Contact = () => {
     {
       icon: '📧',
       title: 'Email',
-      value: 'hochau@gmail.com',
+      value: 'hochauthanh22062004@gmail.com',
       link: 'mailto:hochau@gmail.com'
     },
     {
@@ -44,7 +44,7 @@ const Contact = () => {
     {
       icon: '💼',
       title: 'LinkedIn',
-      value: 'linkedin.com/in/hochau',
+      value: 'linkedin.com/in/hochauthanh',
       link: '#'
     }
   ];
