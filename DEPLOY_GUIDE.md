@@ -47,7 +47,7 @@ npm run build
 npm install --save-dev gh-pages
 
 # Thêm script vào package.json
-"homepage": "https://yourusername.github.io/my-portfolio",
+"homepage": "https://yourusername.github.io/my-blogprofile",
 "scripts": {
   "predeploy": "npm run build",
   "deploy": "gh-pages -d dist"
@@ -113,7 +113,7 @@ git commit -m "Initial commit"
 
 # Tạo repository trên GitHub
 # Push code
-git remote add origin https://github.com/yourusername/my-portfolio.git
+git remote add origin https://github.com/yourusername/my-blogprofile.git
 git push -u origin main
 ```
 

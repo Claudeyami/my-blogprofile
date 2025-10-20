@@ -434,35 +434,48 @@ const Home = () => {
         <p style={{ lineHeight: '1.8', fontSize: '16px' }}>
           Cả hai đều mạnh, nhưng hướng đi khác nhau:
         </p>
-        <table style={{
-          width: '100%',
-          borderCollapse: 'collapse',
-          textAlign: 'left',
-          margin: '20px 0'
+        <div style={{
+          margin: '20px 0',
+          backgroundColor: 'white',
+          border: '1px solid #e2e8f0',
+          borderRadius: '12px',
+          boxShadow: '0 4px 10px rgba(0,0,0,0.04)',
+          overflow: 'hidden'
         }}>
-          <tbody>
-            <tr style={{ background: '#ecf0f1' }}>
-              <th style={{ padding: '10px' }}>Tiêu chí</th>
-              <th style={{ padding: '10px' }}>Java</th>
-              <th style={{ padding: '10px' }}>JavaScript</th>
-            </tr>
-            <tr>
-              <td style={{ padding: '10px' }}>Môi trường chạy</td>
-              <td style={{ padding: '10px' }}>JVM, Android, server</td>
-              <td style={{ padding: '10px' }}>Trình duyệt, Node.js</td>
-            </tr>
-            <tr style={{ background: '#ecf0f1' }}>
-              <td style={{ padding: '10px' }}>Mục tiêu chính</td>
-              <td style={{ padding: '10px' }}>Backend, ứng dụng lớn</td>
-              <td style={{ padding: '10px' }}>Frontend, web động</td>
-            </tr>
-            <tr>
-              <td style={{ padding: '10px' }}>Độ linh hoạt</td>
-              <td style={{ padding: '10px' }}>Cứng nhắc, nghiêm ngặt</td>
-              <td style={{ padding: '10px' }}>Tự do, sáng tạo</td>
-            </tr>
-          </tbody>
-        </table>
+          <div style={{ overflowX: 'auto' }}>
+            <table style={{
+              width: '100%',
+              borderCollapse: 'separate',
+              borderSpacing: 0,
+              textAlign: 'left'
+            }}>
+              <thead>
+                <tr style={{ backgroundColor: '#f8fafc' }}>
+                  <th style={{ padding: '12px 16px', fontWeight: 600, color: '#1e293b' }}>Tiêu chí</th>
+                  <th style={{ padding: '12px 16px', fontWeight: 600, color: '#1e293b' }}>Java</th>
+                  <th style={{ padding: '12px 16px', fontWeight: 600, color: '#1e293b' }}>JavaScript</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style={{ padding: '12px 16px', color: '#475569', borderTop: '1px solid #e2e8f0' }}>Môi trường chạy</td>
+                  <td style={{ padding: '12px 16px', color: '#334155', borderTop: '1px solid #e2e8f0' }}>JVM, Android, server</td>
+                  <td style={{ padding: '12px 16px', color: '#334155', borderTop: '1px solid #e2e8f0' }}>Trình duyệt, Node.js</td>
+                </tr>
+                <tr style={{ backgroundColor: '#f9fafb' }}>
+                  <td style={{ padding: '12px 16px', color: '#475569', borderTop: '1px solid #e2e8f0' }}>Mục tiêu chính</td>
+                  <td style={{ padding: '12px 16px', color: '#334155', borderTop: '1px solid #e2e8f0' }}>Backend, ứng dụng lớn</td>
+                  <td style={{ padding: '12px 16px', color: '#334155', borderTop: '1px solid #e2e8f0' }}>Frontend, web động</td>
+                </tr>
+                <tr>
+                  <td style={{ padding: '12px 16px', color: '#475569', borderTop: '1px solid #e2e8f0' }}>Độ linh hoạt</td>
+                  <td style={{ padding: '12px 16px', color: '#334155', borderTop: '1px solid #e2e8f0' }}>Cứng nhắc, nghiêm ngặt</td>
+                  <td style={{ padding: '12px 16px', color: '#334155', borderTop: '1px solid #e2e8f0' }}>Tự do, sáng tạo</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
 
         <p style={{ textAlign: 'center', marginTop: '20px', fontStyle: 'italic', color: '#555' }}>
           👉 Nói vui: Java là “cỗ máy cơ khí chính xác”, còn JavaScript là “nghệ sĩ đường phố” của giới lập trình.
