@@ -473,7 +473,7 @@ const Home = () => {
             <div>
               <h3 style={{fontSize: '18px', fontWeight: '600', marginBottom: '16px'}}>Liên hệ</h3>
               <div style={{display: 'flex', flexDirection: 'column', gap: '8px', color: '#94a3b8'}}>
-                <p style={{margin: 0}}>📧 hochau@gmail.com</p>
+                <p style={{margin: 0}}>📧 hochauthanh22062004@gmail.com</p>
                 <p style={{margin: 0}}>📱 +84 123 456 789</p>
                 <p style={{margin: 0}}>📍 TP. Hồ Chí Minh</p>
               </div>
