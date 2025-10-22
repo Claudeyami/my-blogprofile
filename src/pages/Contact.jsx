@@ -65,8 +65,8 @@ const Contact = () => {
         background: 'linear-gradient(135deg, #3b82f6, #6366f1)'
       }}>
         <div style={{maxWidth: '1200px', margin: '0 auto', padding: '0 24px', textAlign: 'center'}}>
-          <h1 style={{fontSize: '48px', fontWeight: 'bold', color: 'white', marginBottom: '16px'}}>Liên hệ với tôi</h1>
-          <p style={{fontSize: '20px', color: 'rgba(255, 255, 255, 0.9)', maxWidth: '800px', margin: '0 auto'}}>
+          <h1 style={{fontSize: 'clamp(32px, 6vw, 48px)', fontWeight: 'bold', color: 'white', marginBottom: '16px'}}>Liên hệ với tôi</h1>
+          <p style={{fontSize: 'clamp(16px, 3vw, 20px)', color: 'rgba(255, 255, 255, 0.9)', maxWidth: '800px', margin: '0 auto'}}>
             Có dự án mới hoặc câu hỏi? Tôi luôn sẵn sàng lắng nghe và thảo luận về cách tôi có thể giúp bạn.
           </p>
         </div>
@@ -75,7 +75,7 @@ const Contact = () => {
       {/* Contact Section */}
       <section style={{padding: '64px 0'}}>
         <div style={{maxWidth: '1200px', margin: '0 auto', padding: '0 24px'}}>
-          <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '48px'}}>
+          <div className="contact-grid">
             {/* Contact Form */}
             <div style={{
               backgroundColor: 'white',
@@ -84,9 +84,9 @@ const Contact = () => {
               boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
               border: '1px solid #e2e8f0'
             }}>
-              <h2 style={{fontSize: '32px', fontWeight: 'bold', color: '#1e293b', marginBottom: '24px'}}>Gửi tin nhắn</h2>
+              <h2 style={{fontSize: 'clamp(24px, 4vw, 32px)', fontWeight: 'bold', color: '#1e293b', marginBottom: '24px'}}>Gửi tin nhắn</h2>
               <form onSubmit={handleSubmit} style={{display: 'flex', flexDirection: 'column', gap: '24px'}}>
-                <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px'}}>
+                <div className="contact-form-grid">
                   <div>
                     <label htmlFor="name" style={{display: 'block', fontSize: '14px', fontWeight: '500', color: '#374151', marginBottom: '8px'}}>
                       Họ và tên *
@@ -208,8 +208,8 @@ const Contact = () => {
             {/* Contact Info */}
             <div style={{display: 'flex', flexDirection: 'column', gap: '32px'}}>
               <div>
-                <h2 style={{fontSize: '32px', fontWeight: 'bold', color: '#1e293b', marginBottom: '24px'}}>Thông tin liên hệ</h2>
-                <p style={{fontSize: '16px', color: '#64748b', lineHeight: '1.6', marginBottom: '32px'}}>
+                <h2 style={{fontSize: 'clamp(24px, 4vw, 32px)', fontWeight: 'bold', color: '#1e293b', marginBottom: '24px'}}>Thông tin liên hệ</h2>
+                <p style={{fontSize: 'clamp(14px, 2vw, 16px)', color: '#64748b', lineHeight: '1.6', marginBottom: '32px'}}>
                   Tôi luôn sẵn sàng thảo luận về các dự án mới, cơ hội hợp tác hoặc bất kỳ câu hỏi nào bạn có. 
                   Hãy liên hệ với tôi qua bất kỳ kênh nào thuận tiện nhất.
                 </p>
@@ -296,8 +296,8 @@ const Contact = () => {
       {/* FAQ Section */}
       <section style={{padding: '64px 0', backgroundColor: 'white'}}>
         <div style={{maxWidth: '1200px', margin: '0 auto', padding: '0 24px'}}>
-          <h2 style={{fontSize: '32px', fontWeight: 'bold', color: '#1e293b', textAlign: 'center', marginBottom: '48px'}}>Câu hỏi thường gặp</h2>
-          <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '32px'}}>
+          <h2 style={{fontSize: 'clamp(24px, 4vw, 32px)', fontWeight: 'bold', color: '#1e293b', textAlign: 'center', marginBottom: '48px'}}>Câu hỏi thường gặp</h2>
+          <div className="faq-grid">
             <div style={{display: 'flex', flexDirection: 'column', gap: '24px'}}>
               <div style={{
                 backgroundColor: '#f8fafc',
@@ -365,7 +365,7 @@ const Contact = () => {
       }}>
         <div style={{maxWidth: '1200px', margin: '0 auto', padding: '0 24px', textAlign: 'center'}}>
           <h2 style={{
-            fontSize: '36px',
+            fontSize: 'clamp(28px, 5vw, 36px)',
             fontWeight: 'bold',
             color: 'white',
             marginBottom: '16px'
@@ -373,7 +373,7 @@ const Contact = () => {
             Sẵn sàng bắt đầu dự án?
           </h2>
           <p style={{
-            fontSize: '20px',
+            fontSize: 'clamp(16px, 3vw, 20px)',
             color: 'rgba(255, 255, 255, 0.9)',
             marginBottom: '32px',
             maxWidth: '600px',
@@ -381,12 +381,13 @@ const Contact = () => {
           }}>
             Hãy liên hệ với tôi ngay hôm nay để thảo luận về dự án của bạn và cách tôi có thể giúp bạn đạt được mục tiêu.
           </p>
-          <div style={{display: 'flex', gap: '16px', justifyContent: 'center'}}>
+          <div className="cta-buttons">
             <a 
-              href="mailto:hochau@gmail.com"
+              href="mailto:hochauthanh22062004@gmail.com"
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
+                justifyContent: 'center',
                 padding: '16px 32px',
                 backgroundColor: 'white',
                 color: '#3b82f6',
@@ -403,6 +404,7 @@ const Contact = () => {
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
+                justifyContent: 'center',
                 padding: '16px 32px',
                 border: '2px solid white',
                 color: 'white',

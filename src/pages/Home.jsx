@@ -6,7 +6,7 @@ const Home = () => {
       {/* Hero Section */}
       <section style={{padding: '80px 0 64px'}}>
         <div style={{maxWidth: '1200px', margin: '0 auto', padding: '0 24px'}}>
-          <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '48px', alignItems: 'center'}}>
+          <div className="hero-grid">
             <div style={{display: 'flex', flexDirection: 'column', gap: '32px'}}>
               <div style={{display: 'flex', flexDirection: 'column', gap: '24px'}}>
                 <div style={{
@@ -17,12 +17,13 @@ const Home = () => {
                   color: '#4338ca',
                   borderRadius: '9999px',
                   fontSize: '14px',
-                  fontWeight: '500'
+                  fontWeight: '500',
+                  width: 'fit-content'
                 }}>
                   👋 Xin chào, tôi là
                 </div>
                 <h1 style={{
-                  fontSize: '60px',
+                  fontSize: 'clamp(36px, 8vw, 60px)',
                   fontWeight: 'bold',
                   color: '#1e293b',
                   lineHeight: '1.1',
@@ -31,7 +32,7 @@ const Home = () => {
                   Hồ Châu Thành
                 </h1>
                 <p style={{
-                  fontSize: '20px',
+                  fontSize: 'clamp(16px, 3vw, 20px)',
                   color: '#475569',
                   lineHeight: '1.6',
                   margin: 0
@@ -39,7 +40,7 @@ const Home = () => {
                   Sinh viên đam mê lập trình với kinh nghiệm phát triển game 2D và ứng dụng web thương mại điện tử
                 </p>
                 <p style={{
-                  fontSize: '18px',
+                  fontSize: 'clamp(14px, 2.5vw, 18px)',
                   color: '#64748b',
                   lineHeight: '1.6',
                   margin: 0
@@ -47,7 +48,7 @@ const Home = () => {
                   Đang học tập và phát triển kỹ năng về React.js, Node.js, Unity 2D. Có kinh nghiệm thực tế qua các dự án game và website bán hàng.
                 </p>
               </div>
-              <div style={{display: 'flex', gap: '16px'}}>
+              <div className="hero-buttons">
                 <Link 
                   to="/projects"
                   style={{
@@ -311,23 +312,24 @@ const Home = () => {
       {/* About Section */}
       <section style={{padding: '64px 0', backgroundColor: 'white'}}>
         <div style={{maxWidth: '1200px', margin: '0 auto', padding: '0 24px'}}>
-          <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '48px', alignItems: 'center'}}>
+          <div className="about-grid">
             <div>
-              <h2 style={{fontSize: '36px', fontWeight: 'bold', color: '#1e293b', marginBottom: '24px'}}>Về tôi</h2>
-              <p style={{fontSize: '18px', color: '#475569', lineHeight: '1.6', marginBottom: '24px'}}>
+              <h2 style={{fontSize: 'clamp(28px, 5vw, 36px)', fontWeight: 'bold', color: '#1e293b', marginBottom: '24px'}}>Về tôi</h2>
+              <p style={{fontSize: 'clamp(16px, 2.5vw, 18px)', color: '#475569', lineHeight: '1.6', marginBottom: '24px'}}>
                 Tôi là một sinh viên đam mê lập trình, đang học tập và phát triển kỹ năng trong lĩnh vực công nghệ thông tin. 
                 Với niềm đam mê tạo ra những sản phẩm digital chất lượng cao, tôi luôn tìm kiếm những thử thách mới để học hỏi.
               </p>
-              <p style={{fontSize: '18px', color: '#475569', lineHeight: '1.6', marginBottom: '32px'}}>
+              <p style={{fontSize: 'clamp(16px, 2.5vw, 18px)', color: '#475569', lineHeight: '1.6', marginBottom: '32px'}}>
                 Qua các dự án thực tế, tôi đã học được cách phát triển từ Game Development đến Web Application, 
                 và luôn cố gắng áp dụng những kiến thức mới vào các dự án của mình.
               </p>
-              <div style={{display: 'flex', gap: '16px'}}>
+              <div className="hero-buttons">
                 <Link 
                   to="/introduce"
                   style={{
                     display: 'inline-flex',
                     alignItems: 'center',
+                    justifyContent: 'center',
                     padding: '12px 24px',
                     backgroundColor: '#6366f1',
                     color: 'white',
@@ -343,6 +345,7 @@ const Home = () => {
                   style={{
                     display: 'inline-flex',
                     alignItems: 'center',
+                    justifyContent: 'center',
                     padding: '12px 24px',
                     border: '2px solid #c7d2fe',
                     color: '#6366f1',
@@ -355,7 +358,7 @@ const Home = () => {
                 </Link>
               </div>
             </div>
-            <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px'}}>
+            <div className="about-cards">
               <div style={{textAlign: 'center', padding: '24px', backgroundColor: '#f8fafc', borderRadius: '16px', border: '1px solid #e2e8f0', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'}}>
                 <div style={{fontSize: '32px', marginBottom: '12px'}}>🎯</div>
                 <h3 style={{fontWeight: '600', color: '#1e293b', marginBottom: '8px'}}>Mục tiêu</h3>
@@ -1368,7 +1371,7 @@ const Home = () => {
       }}>
         <div style={{maxWidth: '800px', margin: '0 auto', textAlign: 'center', padding: '0 24px'}}>
           <h2 style={{
-            fontSize: '36px',
+            fontSize: 'clamp(28px, 5vw, 36px)',
             fontWeight: 'bold',
             color: 'white',
             marginBottom: '24px'
@@ -1376,18 +1379,19 @@ const Home = () => {
             Muốn tìm hiểu thêm về tôi?
           </h2>
           <p style={{
-            fontSize: '20px',
+            fontSize: 'clamp(16px, 3vw, 20px)',
             color: 'rgba(255, 255, 255, 0.9)',
             marginBottom: '32px'
           }}>
             Hãy liên hệ với tôi để thảo luận về các dự án và cách tôi có thể học hỏi thêm từ bạn.
           </p>
-          <div style={{display: 'flex', gap: '16px', justifyContent: 'center'}}>
+          <div className="cta-buttons">
             <Link 
               to="/contact"
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
+                justifyContent: 'center',
                 padding: '16px 32px',
                 backgroundColor: 'white',
                 color: '#6366f1',
@@ -1404,6 +1408,7 @@ const Home = () => {
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
+                justifyContent: 'center',
                 padding: '16px 32px',
                 border: '2px solid white',
                 color: 'white',
@@ -1421,7 +1426,7 @@ const Home = () => {
       {/* Footer */}
       <footer style={{backgroundColor: '#1e293b', color: 'white', padding: '48px 0'}}>
         <div style={{maxWidth: '1200px', margin: '0 auto', padding: '0 24px'}}>
-          <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '32px'}}>
+          <div className="footer-grid">
             <div>
               <div style={{display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px'}}>
                 <div style={{
@@ -1433,7 +1438,7 @@ const Home = () => {
                   alignItems: 'center',
                   justifyContent: 'center'
                 }}>
-                  <span style={{color: 'white', fontWeight: 'bold', fontSize: '18px'}}>H</span>
+                  <span style={{color: 'white', fontWeight: 'bold', fontSize: '18px'}}>Clau</span>
                 </div>
                 <span style={{fontSize: '20px', fontWeight: 'bold'}}>Hồ Châu Thành</span>
               </div>

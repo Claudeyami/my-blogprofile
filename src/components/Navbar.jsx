@@ -38,13 +38,13 @@ const Navbar = () => {
               alignItems: 'center',
               justifyContent: 'center'
             }}>
-              <span style={{color: 'white', fontWeight: 'bold', fontSize: '18px'}}>H</span>
+              <span style={{color: 'white', fontWeight: 'bold', fontSize: '18px'}}>Clau</span>
             </div>
             <span style={{fontSize: '20px', fontWeight: 'bold', color: '#1e293b'}}>Hồ Châu Thành</span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div style={{display: 'flex', alignItems: 'center', gap: '32px'}}>
+          <div className="nav-desktop">
             {navItems.map((item) => (
               <Link
                 key={item.name}
@@ -62,14 +62,15 @@ const Navbar = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div style={{display: 'none'}}>
+          <div className="nav-mobile-button">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               style={{
                 color: '#64748b',
                 background: 'none',
                 border: 'none',
-                cursor: 'pointer'
+                cursor: 'pointer',
+                padding: '8px'
               }}
             >
               <svg style={{width: '24px', height: '24px'}} fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -84,32 +85,24 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div style={{
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '8px',
-            paddingTop: '16px',
-            borderTop: '1px solid #e2e8f0'
-          }}>
-            {navItems.map((item) => (
-              <Link
-                key={item.name}
-                to={item.path}
-                style={{
-                  color: isActive(item.path) ? '#6366f1' : '#64748b',
-                  textDecoration: 'none',
-                  fontWeight: isActive(item.path) ? '600' : '500',
-                  padding: '8px 0',
-                  transition: 'all 0.3s ease'
-                }}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {item.name}
-              </Link>
-            ))}
-          </div>
-        )}
+        <div className={`nav-mobile-menu ${isMenuOpen ? 'active' : ''}`}>
+          {navItems.map((item) => (
+            <Link
+              key={item.name}
+              to={item.path}
+              style={{
+                color: isActive(item.path) ? '#6366f1' : '#64748b',
+                textDecoration: 'none',
+                fontWeight: isActive(item.path) ? '600' : '500',
+                padding: '8px 0',
+                transition: 'all 0.3s ease'
+              }}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {item.name}
+            </Link>
+          ))}
+        </div>
       </div>
     </nav>
   );

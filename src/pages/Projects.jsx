@@ -61,8 +61,8 @@ const Projects = () => {
       <section style={{padding: '80px 0 64px', backgroundColor: 'white'}}>
         <div style={{maxWidth: '1200px', margin: '0 auto', padding: '0 24px'}}>
           <div style={{textAlign: 'center'}}>
-            <h1 style={{fontSize: '48px', fontWeight: 'bold', color: '#1e293b', marginBottom: '16px'}}>Dự án của tôi</h1>
-            <p style={{fontSize: '18px', color: '#64748b', maxWidth: '800px', margin: '0 auto', lineHeight: '1.6'}}>
+            <h1 style={{fontSize: 'clamp(32px, 6vw, 48px)', fontWeight: 'bold', color: '#1e293b', marginBottom: '16px'}}>Dự án của tôi</h1>
+            <p style={{fontSize: 'clamp(16px, 2.5vw, 18px)', color: '#64748b', maxWidth: '800px', margin: '0 auto', lineHeight: '1.6'}}>
               Khám phá các dự án tôi đã thực hiện trong quá trình học tập, từ game development đến web applications. 
               Mỗi dự án đều thể hiện kỹ năng và đam mê của tôi trong lập trình.
             </p>
@@ -107,7 +107,7 @@ const Projects = () => {
               <p style={{color: '#94a3b8'}}>Hãy thử chọn danh mục khác để xem thêm dự án.</p>
             </div>
           ) : (
-            <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(500px, 1fr))', gap: '32px'}}>
+            <div className="projects-grid">
               {filteredProjects.map((project, index) => (
                 <div key={project.id} style={{
                   backgroundColor: 'white',
@@ -176,12 +176,13 @@ const Projects = () => {
                         ))}
                       </ul>
                     </div>
-                    <div style={{display: 'flex', gap: '12px'}}>
+                    <div style={{display: 'flex', gap: '12px', flexWrap: 'wrap'}}>
                       <a 
                         href={project.demo}
                         style={{
                           display: 'inline-flex',
                           alignItems: 'center',
+                          justifyContent: 'center',
                           gap: '6px',
                           padding: '8px 16px',
                           backgroundColor: '#6366f1',
@@ -189,7 +190,8 @@ const Projects = () => {
                           borderRadius: '8px',
                           textDecoration: 'none',
                           fontSize: '14px',
-                          fontWeight: '500'
+                          fontWeight: '500',
+                          flex: '1 1 auto'
                         }}
                       >
                         🚀 Xem dự án
@@ -201,6 +203,7 @@ const Projects = () => {
                         style={{
                           display: 'inline-flex',
                           alignItems: 'center',
+                          justifyContent: 'center',
                           gap: '6px',
                           padding: '8px 16px',
                           border: '1px solid #d1d5db',
@@ -208,7 +211,8 @@ const Projects = () => {
                           borderRadius: '8px',
                           textDecoration: 'none',
                           fontSize: '14px',
-                          fontWeight: '500'
+                          fontWeight: '500',
+                          flex: '1 1 auto'
                         }}
                       >
                         📁 Mã nguồn
@@ -225,21 +229,21 @@ const Projects = () => {
       {/* Stats Section */}
       <section style={{padding: '64px 0', backgroundColor: 'white'}}>
         <div style={{maxWidth: '1200px', margin: '0 auto', padding: '0 24px'}}>
-          <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '32px', textAlign: 'center'}}>
+          <div className="projects-stats">
             <div>
-              <div style={{fontSize: '36px', fontWeight: 'bold', color: '#6366f1', marginBottom: '8px'}}>{projects.length}+</div>
+              <div style={{fontSize: 'clamp(28px, 5vw, 36px)', fontWeight: 'bold', color: '#6366f1', marginBottom: '8px'}}>{projects.length}+</div>
               <div style={{color: '#64748b'}}>Dự án hoàn thành</div>
             </div>
             <div>
-              <div style={{fontSize: '36px', fontWeight: 'bold', color: '#8b5cf6', marginBottom: '8px'}}>10+</div>
+              <div style={{fontSize: 'clamp(28px, 5vw, 36px)', fontWeight: 'bold', color: '#8b5cf6', marginBottom: '8px'}}>10+</div>
               <div style={{color: '#64748b'}}>Công nghệ sử dụng</div>
             </div>
             <div>
-              <div style={{fontSize: '36px', fontWeight: 'bold', color: '#ec4899', marginBottom: '8px'}}>2+</div>
+              <div style={{fontSize: 'clamp(28px, 5vw, 36px)', fontWeight: 'bold', color: '#ec4899', marginBottom: '8px'}}>2+</div>
               <div style={{color: '#64748b'}}>Năm học tập</div>
             </div>
             <div>
-              <div style={{fontSize: '36px', fontWeight: 'bold', color: '#f59e0b', marginBottom: '8px'}}>100%</div>
+              <div style={{fontSize: 'clamp(28px, 5vw, 36px)', fontWeight: 'bold', color: '#f59e0b', marginBottom: '8px'}}>100%</div>
               <div style={{color: '#64748b'}}>Đam mê lập trình</div>
             </div>
           </div>
@@ -253,7 +257,7 @@ const Projects = () => {
       }}>
         <div style={{maxWidth: '1200px', margin: '0 auto', textAlign: 'center', padding: '0 24px'}}>
           <h2 style={{
-            fontSize: '36px',
+            fontSize: 'clamp(28px, 5vw, 36px)',
             fontWeight: 'bold',
             color: 'white',
             marginBottom: '16px'
@@ -261,7 +265,7 @@ const Projects = () => {
             Có ý tưởng dự án mới?
           </h2>
           <p style={{
-            fontSize: '20px',
+            fontSize: 'clamp(16px, 3vw, 20px)',
             color: 'rgba(255, 255, 255, 0.9)',
             marginBottom: '32px',
             maxWidth: '600px',
@@ -269,12 +273,13 @@ const Projects = () => {
           }}>
             Tôi luôn sẵn sàng thảo luận về các dự án mới và cách tôi có thể học hỏi thêm từ bạn.
           </p>
-          <div style={{display: 'flex', gap: '16px', justifyContent: 'center'}}>
+          <div className="cta-buttons">
             <Link 
               to="/contact"
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
+                justifyContent: 'center',
                 padding: '16px 32px',
                 backgroundColor: 'white',
                 color: '#6366f1',
@@ -291,6 +296,7 @@ const Projects = () => {
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
+                justifyContent: 'center',
                 padding: '16px 32px',
                 border: '2px solid white',
                 color: 'white',

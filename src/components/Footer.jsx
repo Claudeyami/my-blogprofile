@@ -33,7 +33,7 @@ const Footer = () => {
                 alignItems: 'center',
                 justifyContent: 'center'
               }}>
-                <span style={{color: 'white', fontWeight: 'bold', fontSize: '18px'}}>H</span>
+                <span style={{color: 'white', fontWeight: 'bold', fontSize: '18px'}}>Clau</span>
               </div>
               <span style={{fontSize: '20px', fontWeight: 'bold'}}>Hồ Châu Thành</span>
             </div>
