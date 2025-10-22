@@ -324,7 +324,7 @@ const Home = () => {
               </p>
               <div style={{display: 'flex', gap: '16px'}}>
                 <Link 
-                  to="/blog"
+                  to="/introduce"
                   style={{
                     display: 'inline-flex',
                     alignItems: 'center',
@@ -434,7 +434,7 @@ const Home = () => {
         <p style={{ lineHeight: '1.8', fontSize: '16px', color: '#334155' }}>
           Java ra đời năm 1995 bởi <b>Sun Microsystems</b> với khẩu hiệu “<i>Write once, run anywhere</i>” – 
           viết một lần, chạy ở mọi nơi. Nó là ngôn ngữ <b>hướng đối tượng</b> thuần túy, chạy trên nền 
-          <b>JVM (Java Virtual Machine)</b>, giúp chương trình có thể hoạt động trên mọi hệ điều hành.
+          <b> JVM (Java Virtual Machine)</b>, giúp chương trình có thể hoạt động trên mọi hệ điều hành.
         </p>
         <p style={{ lineHeight: '1.8', fontSize: '16px', color: '#334155' }}>
           👉 Java thường được dùng trong:
@@ -453,7 +453,7 @@ const Home = () => {
         <p style={{ lineHeight: '1.8', fontSize: '16px', color: '#334155' }}>
           JavaScript cũng được sinh ra vào năm 1995, nhưng bởi <b>Netscape</b>, với nhiệm vụ chính là giúp 
           các trang web trở nên “sống động”. Ban đầu nó chỉ chạy trong trình duyệt, nhưng giờ đây với 
-          <b>Node.js</b>, JavaScript đã “tiến hóa” để có thể chạy cả ở phía server.
+          <b> Node.js</b>, JavaScript đã “tiến hóa” để có thể chạy cả ở phía server.
         </p>
         <p style={{ lineHeight: '1.8', fontSize: '16px', color: '#334155' }}>
           👉 JavaScript hiện diện ở khắp nơi:
@@ -518,6 +518,847 @@ const Home = () => {
           Học cả hai sẽ giúp bạn hiểu sâu hơn về cách thế giới phần mềm vận hành — từ backend mạnh mẽ đến 
           những trải nghiệm web mượt mà mà bạn dùng mỗi ngày 💻✨.
         </p>
+      </section>
+
+      {/* 10 Blog Posts Section - Java & JavaScript */}
+      <section style={{
+        padding: '64px 0',
+        backgroundColor: '#f8fafc'
+      }}>
+        <div style={{maxWidth: '1200px', margin: '0 auto', padding: '0 24px'}}>
+          <div style={{textAlign: 'center', marginBottom: '48px'}}>
+            <h2 style={{
+              fontSize: '36px',
+              fontWeight: 'bold',
+              color: '#1e293b',
+              marginBottom: '16px'
+            }}>
+              📚 Bài Viết Chuyên Sâu
+            </h2>
+            <p style={{fontSize: '18px', color: '#64748b'}}>
+              12 chủ đề quan trọng về Java và JavaScript để nâng cao kỹ năng lập trình
+            </p>
+          </div>
+
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))',
+            gap: '24px'
+          }}>
+            {/* Post 1: var, let, const */}
+            <Link to="/blog?id=1" style={{textDecoration: 'none'}}>
+              <div style={{
+                backgroundColor: 'white',
+                borderRadius: '16px',
+                padding: '24px',
+                border: '1px solid #e2e8f0',
+                transition: 'all 0.3s ease',
+                cursor: 'pointer',
+                height: '100%',
+                boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-8px)';
+                e.currentTarget.style.boxShadow = '0 20px 40px rgba(99, 102, 241, 0.2)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+              }}>
+                <div style={{
+                  display: 'inline-block',
+                  padding: '6px 14px',
+                  backgroundColor: '#fef3c7',
+                  color: '#d97706',
+                  borderRadius: '8px',
+                  fontSize: '12px',
+                  fontWeight: '600',
+                  marginBottom: '16px'
+                }}>
+                  JavaScript
+                </div>
+                <h3 style={{
+                  color: '#1e293b',
+                  fontSize: '20px',
+                  fontWeight: '700',
+                  marginBottom: '12px',
+                  lineHeight: '1.4'
+                }}>
+                  Khác Biệt Giữa var, let và const Trong JavaScript
+                </h3>
+                <p style={{
+                  color: '#64748b',
+                  fontSize: '15px',
+                  lineHeight: '1.7',
+                  marginBottom: '16px'
+                }}>
+                  Tìm hiểu sự khác biệt quan trọng về scope, hoisting và khả năng thay đổi giá trị giữa 3 cách khai báo biến trong JavaScript hiện đại.
+                </p>
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  paddingTop: '16px',
+                  borderTop: '1px solid #f1f5f9'
+                }}>
+                  <span style={{fontSize: '13px', color: '#94a3b8'}}>
+                    22 Oct 2025 · 5 phút đọc
+                  </span>
+                  <span style={{color: '#6366f1', fontWeight: '600', fontSize: '14px'}}>
+                    Đọc tiếp →
+                  </span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Post 2: Exception Handling */}
+            <Link to="/blog?id=7" style={{textDecoration: 'none'}}>
+              <div style={{
+                backgroundColor: 'white',
+                borderRadius: '16px',
+                padding: '24px',
+                border: '1px solid #e2e8f0',
+                transition: 'all 0.3s ease',
+                cursor: 'pointer',
+                height: '100%',
+                boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-8px)';
+                e.currentTarget.style.boxShadow = '0 20px 40px rgba(239, 68, 68, 0.2)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+              }}>
+                <div style={{
+                  display: 'inline-block',
+                  padding: '6px 14px',
+                  backgroundColor: '#fee2e2',
+                  color: '#dc2626',
+                  borderRadius: '8px',
+                  fontSize: '12px',
+                  fontWeight: '600',
+                  marginBottom: '16px'
+                }}>
+                  Java
+                </div>
+                <h3 style={{
+                  color: '#1e293b',
+                  fontSize: '20px',
+                  fontWeight: '700',
+                  marginBottom: '12px',
+                  lineHeight: '1.4'
+                }}>
+                  Exception Handling Trong Java - Try, Catch, Finally
+                </h3>
+                <p style={{
+                  color: '#64748b',
+                  fontSize: '15px',
+                  lineHeight: '1.7',
+                  marginBottom: '16px'
+                }}>
+                  Hướng dẫn chi tiết cách xử lý ngoại lệ trong Java với try-catch-finally, throw và throws để tạo ứng dụng ổn định và dễ debug hơn.
+                </p>
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  paddingTop: '16px',
+                  borderTop: '1px solid #f1f5f9'
+                }}>
+                  <span style={{fontSize: '13px', color: '#94a3b8'}}>
+                    10 Oct 2025 · 7 phút đọc
+                  </span>
+                  <span style={{color: '#6366f1', fontWeight: '600', fontSize: '14px'}}>
+                    Đọc tiếp →
+                  </span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Post 3: Arrow Functions */}
+            <Link to="/blog?id=2" style={{textDecoration: 'none'}}>
+              <div style={{
+                backgroundColor: 'white',
+                borderRadius: '16px',
+                padding: '24px',
+                border: '1px solid #e2e8f0',
+                transition: 'all 0.3s ease',
+                cursor: 'pointer',
+                height: '100%',
+                boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-8px)';
+                e.currentTarget.style.boxShadow = '0 20px 40px rgba(99, 102, 241, 0.2)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+              }}>
+                <div style={{
+                  display: 'inline-block',
+                  padding: '6px 14px',
+                  backgroundColor: '#fef3c7',
+                  color: '#d97706',
+                  borderRadius: '8px',
+                  fontSize: '12px',
+                  fontWeight: '600',
+                  marginBottom: '16px'
+                }}>
+                  JavaScript
+                </div>
+                <h3 style={{
+                  color: '#1e293b',
+                  fontSize: '20px',
+                  fontWeight: '700',
+                  marginBottom: '12px',
+                  lineHeight: '1.4'
+                }}>
+                  Arrow Functions vs Regular Functions
+                </h3>
+                <p style={{
+                  color: '#64748b',
+                  fontSize: '15px',
+                  lineHeight: '1.7',
+                  marginBottom: '16px'
+                }}>
+                  So sánh chi tiết giữa arrow function {'(=>)'} và function thông thường, kèm theo các ví dụ thực tế về this binding và use cases.
+                </p>
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  paddingTop: '16px',
+                  borderTop: '1px solid #f1f5f9'
+                }}>
+                  <span style={{fontSize: '13px', color: '#94a3b8'}}>
+                    20 Oct 2025 · 6 phút đọc
+                  </span>
+                  <span style={{color: '#6366f1', fontWeight: '600', fontSize: '14px'}}>
+                    Đọc tiếp →
+                  </span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Post 4: Java Streams */}
+            <Link to="/blog?id=8" style={{textDecoration: 'none'}}>
+              <div style={{
+                backgroundColor: 'white',
+                borderRadius: '16px',
+                padding: '24px',
+                border: '1px solid #e2e8f0',
+                transition: 'all 0.3s ease',
+                cursor: 'pointer',
+                height: '100%',
+                boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-8px)';
+                e.currentTarget.style.boxShadow = '0 20px 40px rgba(239, 68, 68, 0.2)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+              }}>
+                <div style={{
+                  display: 'inline-block',
+                  padding: '6px 14px',
+                  backgroundColor: '#fee2e2',
+                  color: '#dc2626',
+                  borderRadius: '8px',
+                  fontSize: '12px',
+                  fontWeight: '600',
+                  marginBottom: '16px'
+                }}>
+                  Java
+                </div>
+                <h3 style={{
+                  color: '#1e293b',
+                  fontSize: '20px',
+                  fontWeight: '700',
+                  marginBottom: '12px',
+                  lineHeight: '1.4'
+                }}>
+                  Java Streams API - Xử Lý Dữ Liệu Hiện Đại
+                </h3>
+                <p style={{
+                  color: '#64748b',
+                  fontSize: '15px',
+                  lineHeight: '1.7',
+                  marginBottom: '16px'
+                }}>
+                  Khám phá Streams API trong Java 8+ để xử lý collections một cách functional programming với filter, map, reduce và nhiều phương thức mạnh mẽ.
+                </p>
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  paddingTop: '16px',
+                  borderTop: '1px solid #f1f5f9'
+                }}>
+                  <span style={{fontSize: '13px', color: '#94a3b8'}}>
+                    8 Oct 2025 · 9 phút đọc
+                  </span>
+                  <span style={{color: '#6366f1', fontWeight: '600', fontSize: '14px'}}>
+                    Đọc tiếp →
+                  </span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Post 5: Closure */}
+            <Link to="/blog?id=3" style={{textDecoration: 'none'}}>
+              <div style={{
+                backgroundColor: 'white',
+                borderRadius: '16px',
+                padding: '24px',
+                border: '1px solid #e2e8f0',
+                transition: 'all 0.3s ease',
+                cursor: 'pointer',
+                height: '100%',
+                boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-8px)';
+                e.currentTarget.style.boxShadow = '0 20px 40px rgba(99, 102, 241, 0.2)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+              }}>
+                <div style={{
+                  display: 'inline-block',
+                  padding: '6px 14px',
+                  backgroundColor: '#fef3c7',
+                  color: '#d97706',
+                  borderRadius: '8px',
+                  fontSize: '12px',
+                  fontWeight: '600',
+                  marginBottom: '16px'
+                }}>
+                  JavaScript
+                </div>
+                <h3 style={{
+                  color: '#1e293b',
+                  fontSize: '20px',
+                  fontWeight: '700',
+                  marginBottom: '12px',
+                  lineHeight: '1.4'
+                }}>
+                  Closure Trong JavaScript - Khái Niệm Và Ứng Dụng
+                </h3>
+                <p style={{
+                  color: '#64748b',
+                  fontSize: '15px',
+                  lineHeight: '1.7',
+                  marginBottom: '16px'
+                }}>
+                  Hiểu rõ về closure - một trong những khái niệm quan trọng và mạnh mẽ nhất của JavaScript thông qua ví dụ thực tế và use cases phổ biến.
+                </p>
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  paddingTop: '16px',
+                  borderTop: '1px solid #f1f5f9'
+                }}>
+                  <span style={{fontSize: '13px', color: '#94a3b8'}}>
+                    18 Oct 2025 · 8 phút đọc
+                  </span>
+                  <span style={{color: '#6366f1', fontWeight: '600', fontSize: '14px'}}>
+                    Đọc tiếp →
+                  </span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Post 6: Maven vs Gradle */}
+            <Link to="/blog?id=9" style={{textDecoration: 'none'}}>
+              <div style={{
+                backgroundColor: 'white',
+                borderRadius: '16px',
+                padding: '24px',
+                border: '1px solid #e2e8f0',
+                transition: 'all 0.3s ease',
+                cursor: 'pointer',
+                height: '100%',
+                boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-8px)';
+                e.currentTarget.style.boxShadow = '0 20px 40px rgba(239, 68, 68, 0.2)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+              }}>
+                <div style={{
+                  display: 'inline-block',
+                  padding: '6px 14px',
+                  backgroundColor: '#fee2e2',
+                  color: '#dc2626',
+                  borderRadius: '8px',
+                  fontSize: '12px',
+                  fontWeight: '600',
+                  marginBottom: '16px'
+                }}>
+                  Java
+                </div>
+                <h3 style={{
+                  color: '#1e293b',
+                  fontSize: '20px',
+                  fontWeight: '700',
+                  marginBottom: '12px',
+                  lineHeight: '1.4'
+                }}>
+                  Maven vs Gradle - Công Cụ Build Cho Java
+                </h3>
+                <p style={{
+                  color: '#64748b',
+                  fontSize: '15px',
+                  lineHeight: '1.7',
+                  marginBottom: '16px'
+                }}>
+                  So sánh hai công cụ build automation phổ biến nhất cho Java project, phân tích ưu nhược điểm và cách lựa chọn công cụ phù hợp.
+                </p>
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  paddingTop: '16px',
+                  borderTop: '1px solid #f1f5f9'
+                }}>
+                  <span style={{fontSize: '13px', color: '#94a3b8'}}>
+                    6 Oct 2025 · 6 phút đọc
+                  </span>
+                  <span style={{color: '#6366f1', fontWeight: '600', fontSize: '14px'}}>
+                    Đọc tiếp →
+                  </span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Post 7: Event Loop */}
+            <Link to="/blog?id=4" style={{textDecoration: 'none'}}>
+              <div style={{
+                backgroundColor: 'white',
+                borderRadius: '16px',
+                padding: '24px',
+                border: '1px solid #e2e8f0',
+                transition: 'all 0.3s ease',
+                cursor: 'pointer',
+                height: '100%',
+                boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-8px)';
+                e.currentTarget.style.boxShadow = '0 20px 40px rgba(99, 102, 241, 0.2)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+              }}>
+                <div style={{
+                  display: 'inline-block',
+                  padding: '6px 14px',
+                  backgroundColor: '#fef3c7',
+                  color: '#d97706',
+                  borderRadius: '8px',
+                  fontSize: '12px',
+                  fontWeight: '600',
+                  marginBottom: '16px'
+                }}>
+                  JavaScript
+                </div>
+                <h3 style={{
+                  color: '#1e293b',
+                  fontSize: '20px',
+                  fontWeight: '700',
+                  marginBottom: '12px',
+                  lineHeight: '1.4'
+                }}>
+                  Event Loop Trong JavaScript - Cách Hoạt Động
+                </h3>
+                <p style={{
+                  color: '#64748b',
+                  fontSize: '15px',
+                  lineHeight: '1.7',
+                  marginBottom: '16px'
+                }}>
+                  Giải thích chi tiết cơ chế Event Loop, Call Stack, Task Queue và Microtask Queue trong JavaScript runtime environment.
+                </p>
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  paddingTop: '16px',
+                  borderTop: '1px solid #f1f5f9'
+                }}>
+                  <span style={{fontSize: '13px', color: '#94a3b8'}}>
+                    16 Oct 2025 · 10 phút đọc
+                  </span>
+                  <span style={{color: '#6366f1', fontWeight: '600', fontSize: '14px'}}>
+                    Đọc tiếp →
+                  </span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Post 8: Multithreading */}
+            <Link to="/blog?id=10" style={{textDecoration: 'none'}}>
+              <div style={{
+                backgroundColor: 'white',
+                borderRadius: '16px',
+                padding: '24px',
+                border: '1px solid #e2e8f0',
+                transition: 'all 0.3s ease',
+                cursor: 'pointer',
+                height: '100%',
+                boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-8px)';
+                e.currentTarget.style.boxShadow = '0 20px 40px rgba(239, 68, 68, 0.2)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+              }}>
+                <div style={{
+                  display: 'inline-block',
+                  padding: '6px 14px',
+                  backgroundColor: '#fee2e2',
+                  color: '#dc2626',
+                  borderRadius: '8px',
+                  fontSize: '12px',
+                  fontWeight: '600',
+                  marginBottom: '16px'
+                }}>
+                  Java
+                </div>
+                <h3 style={{
+                  color: '#1e293b',
+                  fontSize: '20px',
+                  fontWeight: '700',
+                  marginBottom: '12px',
+                  lineHeight: '1.4'
+                }}>
+                  Multithreading Trong Java - Lập Trình Đa Luồng
+                </h3>
+                <p style={{
+                  color: '#64748b',
+                  fontSize: '15px',
+                  lineHeight: '1.7',
+                  marginBottom: '16px'
+                }}>
+                  Học cách tạo và quản lý threads trong Java, đồng bộ hóa, thread pool và các best practices để xây dựng ứng dụng hiệu suất cao.
+                </p>
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  paddingTop: '16px',
+                  borderTop: '1px solid #f1f5f9'
+                }}>
+                  <span style={{fontSize: '13px', color: '#94a3b8'}}>
+                    4 Oct 2025 · 11 phút đọc
+                  </span>
+                  <span style={{color: '#6366f1', fontWeight: '600', fontSize: '14px'}}>
+                    Đọc tiếp →
+                  </span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Post 9: ES6 Modules */}
+            <Link to="/blog?id=5" style={{textDecoration: 'none'}}>
+              <div style={{
+                backgroundColor: 'white',
+                borderRadius: '16px',
+                padding: '24px',
+                border: '1px solid #e2e8f0',
+                transition: 'all 0.3s ease',
+                cursor: 'pointer',
+                height: '100%',
+                boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-8px)';
+                e.currentTarget.style.boxShadow = '0 20px 40px rgba(99, 102, 241, 0.2)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+              }}>
+                <div style={{
+                  display: 'inline-block',
+                  padding: '6px 14px',
+                  backgroundColor: '#fef3c7',
+                  color: '#d97706',
+                  borderRadius: '8px',
+                  fontSize: '12px',
+                  fontWeight: '600',
+                  marginBottom: '16px'
+                }}>
+                  JavaScript
+                </div>
+                <h3 style={{
+                  color: '#1e293b',
+                  fontSize: '20px',
+                  fontWeight: '700',
+                  marginBottom: '12px',
+                  lineHeight: '1.4'
+                }}>
+                  JavaScript Modules - Import và Export
+                </h3>
+                <p style={{
+                  color: '#64748b',
+                  fontSize: '15px',
+                  lineHeight: '1.7',
+                  marginBottom: '16px'
+                }}>
+                  Tìm hiểu về ES6 Modules, cách sử dụng import/export để tổ chức code JavaScript một cách chuyên nghiệp và maintainable.
+                </p>
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  paddingTop: '16px',
+                  borderTop: '1px solid #f1f5f9'
+                }}>
+                  <span style={{fontSize: '13px', color: '#94a3b8'}}>
+                    14 Oct 2025 · 7 phút đọc
+                  </span>
+                  <span style={{color: '#6366f1', fontWeight: '600', fontSize: '14px'}}>
+                    Đọc tiếp →
+                  </span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Post 10: Lambda Expressions */}
+            <Link to="/blog?id=11" style={{textDecoration: 'none'}}>
+              <div style={{
+                backgroundColor: 'white',
+                borderRadius: '16px',
+                padding: '24px',
+                border: '1px solid #e2e8f0',
+                transition: 'all 0.3s ease',
+                cursor: 'pointer',
+                height: '100%',
+                boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-8px)';
+                e.currentTarget.style.boxShadow = '0 20px 40px rgba(239, 68, 68, 0.2)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+              }}>
+                <div style={{
+                  display: 'inline-block',
+                  padding: '6px 14px',
+                  backgroundColor: '#fee2e2',
+                  color: '#dc2626',
+                  borderRadius: '8px',
+                  fontSize: '12px',
+                  fontWeight: '600',
+                  marginBottom: '16px'
+                }}>
+                  Java
+                </div>
+                <h3 style={{
+                  color: '#1e293b',
+                  fontSize: '20px',
+                  fontWeight: '700',
+                  marginBottom: '12px',
+                  lineHeight: '1.4'
+                }}>
+                  Lambda Expressions Trong Java 8+
+                </h3>
+                <p style={{
+                  color: '#64748b',
+                  fontSize: '15px',
+                  lineHeight: '1.7',
+                  marginBottom: '16px'
+                }}>
+                  Khám phá Lambda Expressions - tính năng mạnh mẽ giúp viết code Java ngắn gọn hơn và áp dụng functional programming hiệu quả.
+                </p>
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  paddingTop: '16px',
+                  borderTop: '1px solid #f1f5f9'
+                }}>
+                  <span style={{fontSize: '13px', color: '#94a3b8'}}>
+                    2 Oct 2025 · 8 phút đọc
+                  </span>
+                  <span style={{color: '#6366f1', fontWeight: '600', fontSize: '14px'}}>
+                    Đọc tiếp →
+                  </span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Post 11: Async/Await */}
+            <Link to="/blog?id=6" style={{textDecoration: 'none'}}>
+              <div style={{
+                backgroundColor: 'white',
+                borderRadius: '16px',
+                padding: '24px',
+                border: '1px solid #e2e8f0',
+                transition: 'all 0.3s ease',
+                cursor: 'pointer',
+                height: '100%',
+                boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-8px)';
+                e.currentTarget.style.boxShadow = '0 20px 40px rgba(99, 102, 241, 0.2)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+              }}>
+                <div style={{
+                  display: 'inline-block',
+                  padding: '6px 14px',
+                  backgroundColor: '#fef3c7',
+                  color: '#d97706',
+                  borderRadius: '8px',
+                  fontSize: '12px',
+                  fontWeight: '600',
+                  marginBottom: '16px'
+                }}>
+                  JavaScript
+                </div>
+                <h3 style={{
+                  color: '#1e293b',
+                  fontSize: '20px',
+                  fontWeight: '700',
+                  marginBottom: '12px',
+                  lineHeight: '1.4'
+                }}>
+                  Async/Await - Lập Trình Bất Đồng Bộ Hiện Đại
+                </h3>
+                <p style={{
+                  color: '#64748b',
+                  fontSize: '15px',
+                  lineHeight: '1.7',
+                  marginBottom: '16px'
+                }}>
+                  Tìm hiểu cách sử dụng async/await để viết code bất đồng bộ dễ đọc hơn, thay thế Promise chains và callback hell.
+                </p>
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  paddingTop: '16px',
+                  borderTop: '1px solid #f1f5f9'
+                }}>
+                  <span style={{fontSize: '13px', color: '#94a3b8'}}>
+                    12 Oct 2025 · 9 phút đọc
+                  </span>
+                  <span style={{color: '#6366f1', fontWeight: '600', fontSize: '14px'}}>
+                    Đọc tiếp →
+                  </span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Post 12: Generics */}
+            <Link to="/blog?id=12" style={{textDecoration: 'none'}}>
+              <div style={{
+                backgroundColor: 'white',
+                borderRadius: '16px',
+                padding: '24px',
+                border: '1px solid #e2e8f0',
+                transition: 'all 0.3s ease',
+                cursor: 'pointer',
+                height: '100%',
+                boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-8px)';
+                e.currentTarget.style.boxShadow = '0 20px 40px rgba(239, 68, 68, 0.2)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+              }}>
+                <div style={{
+                  display: 'inline-block',
+                  padding: '6px 14px',
+                  backgroundColor: '#fee2e2',
+                  color: '#dc2626',
+                  borderRadius: '8px',
+                  fontSize: '12px',
+                  fontWeight: '600',
+                  marginBottom: '16px'
+                }}>
+                  Java
+                </div>
+                <h3 style={{
+                  color: '#1e293b',
+                  fontSize: '20px',
+                  fontWeight: '700',
+                  marginBottom: '12px',
+                  lineHeight: '1.4'
+                }}>
+                  Generics Trong Java - Lập Trình Tổng Quát
+                </h3>
+                <p style={{
+                  color: '#64748b',
+                  fontSize: '15px',
+                  lineHeight: '1.7',
+                  marginBottom: '16px'
+                }}>
+                  Khám phá Generics để viết code an toàn về kiểu dữ liệu, tái sử dụng cao và giảm thiểu lỗi runtime trong Java.
+                </p>
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  paddingTop: '16px',
+                  borderTop: '1px solid #f1f5f9'
+                }}>
+                  <span style={{fontSize: '13px', color: '#94a3b8'}}>
+                    1 Oct 2025 · 10 phút đọc
+                  </span>
+                  <span style={{color: '#6366f1', fontWeight: '600', fontSize: '14px'}}>
+                    Đọc tiếp →
+                  </span>
+                </div>
+              </div>
+            </Link>
+          </div>
+
+          {/* View All Button */}
+          <div style={{textAlign: 'center', marginTop: '48px'}}>
+            <Link 
+              to="/blog"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                padding: '16px 32px',
+                backgroundColor: '#6366f1',
+                color: 'white',
+                fontWeight: '600',
+                borderRadius: '12px',
+                textDecoration: 'none',
+                boxShadow: '0 10px 15px -3px rgba(99, 102, 241, 0.3)',
+                transition: 'all 0.3s ease'
+              }}
+            >
+              Xem tất cả bài viết →
+            </Link>
+          </div>
+        </div>
       </section>
 
       {/* CTA Section */}
@@ -605,7 +1446,8 @@ const Home = () => {
               <div style={{display: 'flex', flexDirection: 'column', gap: '8px'}}>
                 <Link to="/" style={{color: '#94a3b8', textDecoration: 'none'}}>Trang chủ</Link>
                 <Link to="/projects" style={{color: '#94a3b8', textDecoration: 'none'}}>Dự án</Link>
-                <Link to="/blog" style={{color: '#94a3b8', textDecoration: 'none'}}>Giới thiệu</Link>
+                <Link to="/introduce" style={{color: '#94a3b8', textDecoration: 'none'}}>Giới thiệu</Link>
+                <Link to="/blog" style={{color: '#94a3b8', textDecoration: 'none'}}>Blog</Link>
                 <Link to="/contact" style={{color: '#94a3b8', textDecoration: 'none'}}>Liên hệ</Link>
               </div>
             </div>

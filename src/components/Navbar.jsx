@@ -8,7 +8,8 @@ const Navbar = () => {
   const navItems = [
     { name: 'Trang chủ', path: '/' },
     { name: 'Dự án', path: '/projects' },
-    { name: 'Giới thiệu', path: '/blog' },
+    { name: 'Giới thiệu', path: '/introduce' },
+    { name: 'Blog', path: '/blog' },
     { name: 'Liên hệ', path: '/contact' }
   ];
 
