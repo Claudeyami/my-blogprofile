@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   return (
     <div style={{minHeight: '100vh', backgroundColor: '#f8fafc'}}>
-      {/* Hero Section */}
+      {/* Hero Section - Welcome to Blog */}
       <section style={{padding: '80px 0 64px'}}>
         <div style={{maxWidth: '1200px', margin: '0 auto', padding: '0 24px'}}>
           <div className="hero-grid">
@@ -20,7 +20,7 @@ const Home = () => {
                   fontWeight: '500',
                   width: 'fit-content'
                 }}>
-                  👋 Xin chào, tôi là
+                  ✨ Chào mừng bạn đến với
                 </div>
                 <h1 style={{
                   fontSize: 'clamp(36px, 8vw, 60px)',
@@ -29,7 +29,7 @@ const Home = () => {
                   lineHeight: '1.1',
                   margin: 0
                 }}>
-                  Hồ Châu Thành
+                  Hành Trình Lập Trình
                 </h1>
                 <p style={{
                   fontSize: 'clamp(16px, 3vw, 20px)',
@@ -37,7 +37,7 @@ const Home = () => {
                   lineHeight: '1.6',
                   margin: 0
                 }}>
-                  Sinh viên đam mê lập trình với kinh nghiệm phát triển game 2D và ứng dụng web thương mại điện tử
+                  Nơi chia sẻ kiến thức, kinh nghiệm và đam mê về thế giới công nghệ - từ những dòng code đầu tiên đến những dự án thực tế
                 </p>
                 <p style={{
                   fontSize: 'clamp(14px, 2.5vw, 18px)',
@@ -45,12 +45,13 @@ const Home = () => {
                   lineHeight: '1.6',
                   margin: 0
                 }}>
-                  Đang học tập và phát triển kỹ năng về React.js, Node.js, Unity 2D. Có kinh nghiệm thực tế qua các dự án game và website bán hàng.
+                  🚀 Khám phá các bài viết chuyên sâu về Java, JavaScript, React, Unity và nhiều công nghệ hiện đại khác. 
+                  Cùng nhau học hỏi, phát triển và biến ý tưởng thành hiện thực!
                 </p>
               </div>
               <div className="hero-buttons">
                 <Link 
-                  to="/projects"
+                  to="/blog"
                   style={{
                     display: 'inline-flex',
                     alignItems: 'center',
@@ -65,10 +66,10 @@ const Home = () => {
                     transition: 'all 0.3s ease'
                   }}
                 >
-                  Xem dự án của tôi
+                  Khám phá bài viết
                 </Link>
                 <Link 
-                  to="/contact"
+                  to="/introduce"
                   style={{
                     display: 'inline-flex',
                     alignItems: 'center',
@@ -82,7 +83,7 @@ const Home = () => {
                     transition: 'all 0.3s ease'
                   }}
                 >
-                  Liên hệ ngay
+                  Về tác giả
                 </Link>
               </div>
             </div>
@@ -101,8 +102,9 @@ const Home = () => {
               }}>
                 <div style={{position: 'absolute', inset: 0, backgroundColor: 'rgba(0, 0, 0, 0.1)'}}></div>
                 <div style={{textAlign: 'center', color: 'white', position: 'relative', zIndex: 10}}>
-                  <div style={{fontSize: '64px', marginBottom: '16px'}}>👨‍💻</div>
-                  <h3 style={{fontSize: '24px', fontWeight: 'bold', margin: 0}}>Developer</h3>
+                  <div style={{fontSize: '64px', marginBottom: '16px'}}>💡</div>
+                  <h3 style={{fontSize: '24px', fontWeight: 'bold', margin: 0}}>Code & Create</h3>
+                  <p style={{fontSize: '16px', marginTop: '8px', opacity: 0.9}}>Learn • Build • Share</p>
                 </div>
                 <div style={{
                   position: 'absolute',
@@ -134,8 +136,8 @@ const Home = () => {
       <section style={{padding: '64px 0', backgroundColor: 'white'}}>
         <div style={{maxWidth: '1200px', margin: '0 auto', padding: '0 24px'}}>
           <div style={{textAlign: 'center', marginBottom: '48px'}}>
-            <h2 style={{fontSize: '36px', fontWeight: 'bold', color: '#1e293b', marginBottom: '16px'}}>Kỹ năng đang học tập</h2>
-            <p style={{fontSize: '18px', color: '#64748b'}}>Các công nghệ và kỹ năng tôi đang phát triển để tạo ra những sản phẩm tuyệt vời</p>
+            <h2 style={{fontSize: '36px', fontWeight: 'bold', color: '#1e293b', marginBottom: '16px'}}>Chủ Đề Blog</h2>
+            <p style={{fontSize: '18px', color: '#64748b'}}>Những công nghệ và lĩnh vực mà blog này tập trung chia sẻ và hướng dẫn</p>
           </div>
           <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px'}}>
             <div style={{
@@ -218,8 +220,8 @@ const Home = () => {
       <section style={{padding: '64px 0', backgroundColor: '#f8fafc'}}>
         <div style={{maxWidth: '1200px', margin: '0 auto', padding: '0 24px'}}>
           <div style={{textAlign: 'center', marginBottom: '48px'}}>
-            <h2 style={{fontSize: '36px', fontWeight: 'bold', color: '#1e293b', marginBottom: '16px'}}>Dự án đã thực hiện</h2>
-            <p style={{fontSize: '18px', color: '#64748b'}}>Các dự án tôi đã hoàn thành trong quá trình học tập và phát triển kỹ năng</p>
+            <h2 style={{fontSize: '36px', fontWeight: 'bold', color: '#1e293b', marginBottom: '16px'}}>Dự Án Nổi Bật</h2>
+            <p style={{fontSize: '18px', color: '#64748b'}}>Những dự án thực tế mà blog này chia sẻ kinh nghiệm và hướng dẫn chi tiết</p>
           </div>
           <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '32px'}}>
             {/* Project 1 */}
@@ -309,19 +311,36 @@ const Home = () => {
         </div>
       </section>
 
-      {/* About Section */}
+      {/* About Author Section */}
       <section style={{padding: '64px 0', backgroundColor: 'white'}}>
         <div style={{maxWidth: '1200px', margin: '0 auto', padding: '0 24px'}}>
           <div className="about-grid">
             <div>
-              <h2 style={{fontSize: 'clamp(28px, 5vw, 36px)', fontWeight: 'bold', color: '#1e293b', marginBottom: '24px'}}>Về tôi</h2>
+              <div style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                padding: '6px 12px',
+                backgroundColor: '#f3e8ff',
+                color: '#8b5cf6',
+                borderRadius: '9999px',
+                fontSize: '13px',
+                fontWeight: '600',
+                marginBottom: '16px'
+              }}>
+                👋 Xin chào, tôi là
+              </div>
+              <h2 style={{fontSize: 'clamp(28px, 5vw, 36px)', fontWeight: 'bold', color: '#1e293b', marginBottom: '24px'}}>Hồ Châu Thành</h2>
               <p style={{fontSize: 'clamp(16px, 2.5vw, 18px)', color: '#475569', lineHeight: '1.6', marginBottom: '24px'}}>
                 Tôi là một sinh viên đam mê lập trình, đang học tập và phát triển kỹ năng trong lĩnh vực công nghệ thông tin. 
-                Với niềm đam mê tạo ra những sản phẩm digital chất lượng cao, tôi luôn tìm kiếm những thử thách mới để học hỏi.
+                Với niềm đam mê tạo ra những sản phẩm digital chất lượng cao, tôi luôn tìm kiếm những thử thách mới để học hỏi và chia sẻ kiến thức qua blog này.
               </p>
-              <p style={{fontSize: 'clamp(16px, 2.5vw, 18px)', color: '#475569', lineHeight: '1.6', marginBottom: '32px'}}>
-                Qua các dự án thực tế, tôi đã học được cách phát triển từ Game Development đến Web Application, 
-                và luôn cố gắng áp dụng những kiến thức mới vào các dự án của mình.
+              <p style={{fontSize: 'clamp(16px, 2.5vw, 18px)', color: '#475569', lineHeight: '1.6', marginBottom: '24px'}}>
+                Qua các dự án thực tế từ Game Development với Unity đến Web Application với React và Node.js, 
+                tôi không ngừng học hỏi và áp dụng những công nghệ mới. Blog này là nơi tôi ghi lại hành trình học tập, 
+                những kinh nghiệm thực tế và chia sẻ kiến thức với cộng đồng.
+              </p>
+              <p style={{fontSize: 'clamp(15px, 2.3vw, 17px)', color: '#64748b', lineHeight: '1.6', marginBottom: '32px', fontStyle: 'italic'}}>
+                💼 Hiện đang phát triển kỹ năng về React.js, Node.js, Unity 2D, và có kinh nghiệm thực tế qua các dự án game và website thương mại điện tử.
               </p>
               <div className="hero-buttons">
                 <Link 
@@ -338,10 +357,10 @@ const Home = () => {
                     textDecoration: 'none'
                   }}
                 >
-                  Tìm hiểu thêm
+                  Tìm hiểu thêm về tôi
                 </Link>
                 <Link 
-                  to="/contact"
+                  to="/projects"
                   style={{
                     display: 'inline-flex',
                     alignItems: 'center',
@@ -354,30 +373,30 @@ const Home = () => {
                     textDecoration: 'none'
                   }}
                 >
-                  Liên hệ
+                  Xem dự án
                 </Link>
               </div>
             </div>
             <div className="about-cards">
               <div style={{textAlign: 'center', padding: '24px', backgroundColor: '#f8fafc', borderRadius: '16px', border: '1px solid #e2e8f0', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'}}>
-                <div style={{fontSize: '32px', marginBottom: '12px'}}>🎯</div>
-                <h3 style={{fontWeight: '600', color: '#1e293b', marginBottom: '8px'}}>Mục tiêu</h3>
-                <p style={{fontSize: '14px', color: '#64748b', margin: 0}}>Học tập và phát triển kỹ năng</p>
+                <div style={{fontSize: '32px', marginBottom: '12px'}}>📚</div>
+                <h3 style={{fontWeight: '600', color: '#1e293b', marginBottom: '8px'}}>Học hỏi</h3>
+                <p style={{fontSize: '14px', color: '#64748b', margin: 0}}>Không ngừng nâng cao kiến thức</p>
               </div>
               <div style={{textAlign: 'center', padding: '24px', backgroundColor: '#f8fafc', borderRadius: '16px', border: '1px solid #e2e8f0', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'}}>
-                <div style={{fontSize: '32px', marginBottom: '12px'}}>💡</div>
-                <h3 style={{fontWeight: '600', color: '#1e293b', marginBottom: '8px'}}>Sáng tạo</h3>
-                <p style={{fontSize: '14px', color: '#64748b', margin: 0}}>Luôn tìm kiếm giải pháp mới</p>
+                <div style={{fontSize: '32px', marginBottom: '12px'}}>💻</div>
+                <h3 style={{fontWeight: '600', color: '#1e293b', marginBottom: '8px'}}>Thực hành</h3>
+                <p style={{fontSize: '14px', color: '#64748b', margin: 0}}>Xây dựng dự án thực tế</p>
               </div>
               <div style={{textAlign: 'center', padding: '24px', backgroundColor: '#f8fafc', borderRadius: '16px', border: '1px solid #e2e8f0', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'}}>
-                <div style={{fontSize: '32px', marginBottom: '12px'}}>🚀</div>
-                <h3 style={{fontWeight: '600', color: '#1e293b', marginBottom: '8px'}}>Hiệu quả</h3>
-                <p style={{fontSize: '14px', color: '#64748b', margin: 0}}>Phát triển nhanh và ổn định</p>
+                <div style={{fontSize: '32px', marginBottom: '12px'}}>✍️</div>
+                <h3 style={{fontWeight: '600', color: '#1e293b', marginBottom: '8px'}}>Chia sẻ</h3>
+                <p style={{fontSize: '14px', color: '#64748b', margin: 0}}>Viết blog và hướng dẫn</p>
               </div>
               <div style={{textAlign: 'center', padding: '24px', backgroundColor: '#f8fafc', borderRadius: '16px', border: '1px solid #e2e8f0', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'}}>
-                <div style={{fontSize: '32px', marginBottom: '12px'}}>🤝</div>
-                <h3 style={{fontWeight: '600', color: '#1e293b', marginBottom: '8px'}}>Hợp tác</h3>
-                <p style={{fontSize: '14px', color: '#64748b', margin: 0}}>Làm việc nhóm hiệu quả</p>
+                <div style={{fontSize: '32px', marginBottom: '12px'}}>🌱</div>
+                <h3 style={{fontWeight: '600', color: '#1e293b', marginBottom: '8px'}}>Phát triển</h3>
+                <p style={{fontSize: '14px', color: '#64748b', margin: 0}}>Luôn tiến về phía trước</p>
               </div>
             </div>
           </div>
@@ -1376,14 +1395,14 @@ const Home = () => {
             color: 'white',
             marginBottom: '24px'
           }}>
-            Muốn tìm hiểu thêm về tôi?
+            Cùng Nhau Học Tập & Phát Triển
           </h2>
           <p style={{
             fontSize: 'clamp(16px, 3vw, 20px)',
             color: 'rgba(255, 255, 255, 0.9)',
             marginBottom: '32px'
           }}>
-            Hãy liên hệ với tôi để thảo luận về các dự án và cách tôi có thể học hỏi thêm từ bạn.
+            Đừng ngần ngại liên hệ để thảo luận về lập trình, chia sẻ ý tưởng hoặc đơn giản là kết nối cùng nhau trong hành trình công nghệ!
           </p>
           <div className="cta-buttons">
             <Link 
@@ -1401,10 +1420,10 @@ const Home = () => {
                 boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)'
               }}
             >
-              Liên hệ ngay
+              Liên hệ với tôi
             </Link>
             <Link 
-              to="/projects"
+              to="/blog"
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
@@ -1417,7 +1436,7 @@ const Home = () => {
                 textDecoration: 'none'
               }}
             >
-              Xem portfolio
+              Đọc thêm bài viết
             </Link>
           </div>
         </div>
